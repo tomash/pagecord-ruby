@@ -7,6 +7,7 @@ module Pagecord
     include HTTParty
 
     base_uri "https://api.pagecord.com"
+    default_timeout 30
     format :json
 
     def initialize(api_key:)
